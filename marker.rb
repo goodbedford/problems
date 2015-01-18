@@ -6,4 +6,6 @@ class Marker
 	def write
 		Kernel.puts("I am writing with a #{@color} marker!")
 	end
+
 end
+
