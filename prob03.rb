@@ -8,18 +8,24 @@ And it must be a whole number greater than 1.
 
 
 
-for i in (2..10)
+num = 1
+last  = 50
 
-	for j in (2..i)
-		if i <= i/2
-			if i%j != 0
-			 puts "#{i} is a prime number"
-			 end  
-		end
+#if the num can be divided by two then it i not prime
+# 7, 11,
 
 
+prime = true
+
+while(num < 50)
+
+	if num % 2 == 0 
+		puts "#{num} is not prime"
+		prime = false
 	end
-		#puts "#{i} is a prime number"
-	
+	if prime
+		puts "#{num} is prime"
+	end
+	prime = true;
+	num +=1
 end
-
